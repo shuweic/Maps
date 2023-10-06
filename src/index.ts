@@ -1,3 +1,4 @@
+/// <reference types="@types/googlemaps" />
 import { User } from "./User";
 import { Company } from "./Company";
 
