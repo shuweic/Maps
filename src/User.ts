@@ -6,6 +6,15 @@ export class User {
         lat: number;
         lng: number;
     };
+    markerContent(): string {
+        return `
+            <div id="userInfoPopup">
+                <h1>User Name: ${this.name}</h1>
+                <h3>lat: ${this.location.lat}</h3>
+                <h3>lng: ${this.location.lng}</h3>
+            </div>
+        `
+    }
 
     constructor() {
         this.name = faker.person.firstName();
